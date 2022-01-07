@@ -1,25 +1,18 @@
-// const allEl = document.querySelector('#categories')
-// console.log(allEl)
+// const navigatorEl = document.querySelector('#categories')
+// console.log(navigatorEl)
 
+const navigatorEl = document.querySelector('#categories');
+console.log(navigatorEl);
 
-// const navEl = allEl.querySelectorAll('ul')
-// console.log(navEl)
+const amountEl = navigatorEl.querySelectorAll('h2');
+console.log('Number of categories:', amountEl.length);
 
+const firstNameEl = navigatorEl.querySelector('h2');
+console.log('Category:', firstNameEl.textContent);
 
-const allEl = document.querySelector('.item-animals')
-console.log(allEl)
-console.log("Category:", allEl.textContent)
+const quantityEl = navigatorEl.querySelector('li');
+console.log('Elements:', quantityEl.getAttribute("ul"));
 
-const animalsEl  = document.getElementsByClassName("el1")[0].childElementCount;
-console.log('Elements:', animalsEl);
-
-const allEl1 = document.querySelector('.item-products')
-console.log(allEl1)
-console.log("Category:", allEl1.textContent)
-
-const allEl2 = document.querySelector('.itam-technologies')
-console.log(allEl2)
-console.log("Category:", allEl2.textContent)
 
 // Number of categories: 3
 
