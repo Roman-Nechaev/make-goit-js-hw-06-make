@@ -4,23 +4,34 @@
 const navigatorEl = document.querySelector('#categories');
 console.log(navigatorEl);
 
-const amountEl = navigatorEl.querySelectorAll('h2');
-console.log('Number of categories:', amountEl.length);
+const firstamountEl = navigatorEl.querySelectorAll('h2');
+console.log('Number of categories:', firstamountEl.length); // Number of categories: 3
 
 const firstNameEl = navigatorEl.querySelector('h2');
-console.log('Category:', firstNameEl.textContent);
+console.log('Category:', firstNameEl.textContent); // Category: Animals
 
-const quantityEl = navigatorEl.querySelector('li');
-console.log('Elements:', quantityEl.getAttribute("ul"));
+const firstquantityEl = navigatorEl.querySelectorAll('.item ul');
+
+console.log('Elements:', firstquantityEl[0].childElementCount); // Elements: 4
 
 
-// Number of categories: 3
 
-// Category: Animals
-// Elements: 4
+const secondNameEl = navigatorEl.querySelectorAll('h2');
+console.log('Category:', secondNameEl[1].textContent); // Category: Products
 
-// Category: Products
-// Elements: 3
+const secondquantityEl = navigatorEl.querySelectorAll('.item ul');
 
-// Category: Technologies
-// Elements: 5
+console.log('Elements:', secondquantityEl[1].childElementCount); // Elements: 3
+
+
+const lastNameEl = navigatorEl.querySelectorAll('h2');
+console.log('Category:', lastNameEl[2].textContent); // Category: Technologies
+
+const lastquantityEl = navigatorEl.querySelectorAll('.item ul');
+
+console.log('Elements:', lastquantityEl[2].childElementCount); // Elementlast
+
+
+
+
+
