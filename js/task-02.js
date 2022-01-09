@@ -15,19 +15,20 @@ const ingredients = [
 
   const ingredientsListEl = document.querySelector('#ingredients');
 
- const addElement = ingredients.map(option => {
-    const addItemEl = document.createElement('li');
-    addItemEl.classList.add('item');
-    addItemEl.textContent = option;
-  
-    return addItemEl;
-  });
-  console.log(addElement);
 
+const addIngredientsEl = options => {
+ return options.map(option => {
+  const addItemEl = document.createElement('li');
+  addItemEl.classList.add('item');
+  addItemEl.textContent = option;
 
+  return addItemEl; 
+ });
+};
 
-  ingredientsListEl.append(...addElement);
-
+ const elements = addIngredientsEl(ingredients);
+  ingredientsListEl.append(...elements);
+console.log(ingredientsListEl);
 
 
 
