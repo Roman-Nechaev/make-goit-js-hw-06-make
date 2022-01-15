@@ -8,10 +8,10 @@ const inputEl = document.querySelector('#font-size-control');
 
 const textEl = document.querySelector('#text');
 
-inputEl.addEventListener('mousemove', function () {
-    textEl.style.fontSize = this.value + 'px';
+inputEl.addEventListener('mousemove', event => {
+    textEl.style.fontSize = event.currentTarget.value + 'px';
 });
 
-// inputEl.addEventListener('change', function () {
-//     textEl.style.fontSize = this.value + 'px';
+// inputEl.addEventListener('change', event => {
+//     textEl.style.fontSize = event.currentTarget.value + 'px';
 // });
