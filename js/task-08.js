@@ -19,4 +19,31 @@
 
 const form = document.querySelector('.login-form');
 
-form.addEventListener('submit', event => {});
+form.addEventListener('submit', event => {
+    event.preventDefault();
+
+    const formEl = event.currentTarget.elements;
+
+    const email = formEl.email.value;
+    const password = formEl.password.value;
+
+    const formData = {
+        email,
+        password,
+    };
+
+    if (!email) {
+        alert('Поле email не заполнено');
+        return;
+    }
+    if (!password) {
+        alert('Поле password не заполнено');
+        return;
+    }
+
+    if (formData) {
+        console.log(formData);
+        form.reset();
+        return;
+    }
+});
