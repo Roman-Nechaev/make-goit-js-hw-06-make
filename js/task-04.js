@@ -21,15 +21,13 @@ const useBtn = document.querySelectorAll('#counter button');
 const counterValueEl = document.querySelector('#value');
 
 useBtn[0].addEventListener('click', function () {
-    // console.log('Клик - ');
     counter.decrement();
-    // console.log(counter);
+
     counterValueEl.textContent = counter.value;
 });
 
 useBtn[1].addEventListener('click', function () {
-    // console.log('Клик + ');
     counter.increment();
-    // console.log(counter);
+
     counterValueEl.textContent = counter.value;
 });
